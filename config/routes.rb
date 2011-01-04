@@ -1,6 +1,14 @@
 EndApp::Application.routes.draw do
   resources :aanwezighedens
 
+  get "users/login"
+
+  resources :aanwezighedens
+
+  get "aanwezighedens/login"
+
+  resources :aanwezighedens
+
   resources :labos
 
   resources :students
@@ -62,5 +70,5 @@ EndApp::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id(.:format)))'
+  match ':controller(/:action(/:id(.:format)))'
 end

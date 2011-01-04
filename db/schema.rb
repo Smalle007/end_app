@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110103180711) do
+ActiveRecord::Schema.define(:version => 20110104154448) do
 
 # Could not dump table "aanwezighedens" because of following ArgumentError
 #   invalid date

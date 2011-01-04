@@ -129,11 +129,4 @@ class UsersController < ApplicationController
 		redirect_to :action=> 'login'
 	end
   end
-  
-  def logout
-  	if session[:user_id]
-		reset_session
-		redirect_to :action=> 'login'
-	end
-  end
 end

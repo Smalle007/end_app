@@ -1,4 +1,5 @@
 Welkom <strong><%=session[:user_id]%></strong>.
+<%= link_to "logout",:controller => "users", :action => "logout" %>
 <h1>Docent aanpassen</h1>
 
 <%= render 'form' %>

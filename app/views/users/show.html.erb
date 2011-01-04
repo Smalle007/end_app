@@ -1,4 +1,5 @@
 Welkom <strong><%=session[:user_id]%></strong>.
+<%= link_to "logout",:controller => "users", :action => "logout" %>
 <p id="notice"><%= notice %></p>
 
 <p>
